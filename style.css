@@ -1,0 +1,1596 @@
+html,body{
+    width: 100% ;
+    height: 100% ;
+    margin: 0 ;
+    padding: 0 ;
+    overflow: hidden !important;
+    background: linear-gradient(54deg, rgba(123,237,141,1) 0%, rgba(35,158,28,1) 100%);
+}
+
+.main {
+    height: 80%;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+/* display content  */
+.display-content-register{
+    width: 100%;
+    height: 88%;
+    border-radius: 20px 20px 36px 36px;
+    background:#fff;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.05);
+}
+
+.display-dayily-sumary{
+    display: none;
+    width: 100%;
+    height: 88%;
+    overflow-y: scroll;
+    border-radius: 20px 20px 36px 36px;
+    background:#fff;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.05);
+}
+
+.display-content-register{
+    display: block;
+}
+
+/* nav link */
+.nav-work_food{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color:white;
+    border-radius: 20px;
+    height: 10%;
+    width: 100%;
+}
+
+.sections-navbar {
+    /* /* here we have the icons for the app */
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+}
+
+.nav-icons{
+    padding-top: 10px;
+font-size: 25px;
+color: #9DACB9;
+}
+
+.nav-icon-logo{
+    width: 50px;
+    height: 50px;
+}
+
+/* log in area */ 
+.create-account{
+    font-family: acumin-pro, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #7bed8d;
+}
+
+.form-create_account {
+    margin-top: 50px;
+    width: 60% !important;
+    margin-left: 20% !important;
+}
+
+.register-fields {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    padding-left:40px;
+    border-radius: 8px;
+    border-color: transparent;
+    height: 60px;
+}
+
+.fname-field{
+    background: #f0f4f8 url(src/img/icon-fname.png) no-repeat scroll 2% 50%;
+}
+
+.email-field{
+    background: #f0f4f8 url(src/img/icon-mail.png) no-repeat scroll 2% 50%;
+}
+
+.psw-field{
+    background: #f0f4f8 url(src/img/icon-padlock.png) no-repeat scroll 2% 50%;
+}
+
+.wrong-input {
+    position: relative;
+    animation: shake .1s linear;
+    animation-iteration-count: 3;
+}
+@keyframes shake {
+    0% { left: -5px; }
+    100% { right: -5px; }
+}
+.glowing-border { 
+    border: 2px solid red;
+    outline: none;
+    box-shadow: 0 0 10px red;
+}
+
+.submit-account {
+margin-top: 50px;
+height: 60px;
+border-color: transparent;
+border-radius: 30px;
+font-family: acumin-pro, sans-serif;
+font-weight: bold;
+font-size: 14px;
+letter-spacing: -0.01em;
+color: #fff;
+background: #7bed8d;
+}
+
+/* daily info- home page*/
+ 
+.calories-remaining-today {
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+}
+
+.add-exercise-food{
+    width: 100%;
+    height: auto;
+    margin-top: 30px !important;
+    margin-bottom: 20px;
+ }
+
+
+/* .account-picture{}
+ */
+
+ .title-daily-summary{
+    border-radius: 26px;
+    background: #7bed8d;
+    color: #fff;
+    text-align: center;
+    margin-left: 10%;
+    padding-bottom: 5px;
+    width: 80%;
+ }
+
+ .cropped {
+    width: 120px !important;
+    height: 160px; 
+    overflow: hidden;
+    border: 5px solid whitesmoke;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.cropped img {
+    margin: -10px 0px 0px -260px;
+}
+
+
+
+.calories-remaining-change{
+    font-family: acumin-pro, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #748a9d;
+}
+
+.btn-change{
+    text-decoration: none;
+    color: rgb(123,237,141);
+}
+
+.btn-change:hover{
+    color: #25A01F;
+}
+
+.total-calories{
+    color:rgb(133,196,0);
+    font-size: 45px;
+    font-weight: 600;
+    margin-left: 20px
+}
+
+.desc-cal-operation{
+font-size: 16px;
+text-align: center;
+color: #25A01F;
+}
+
+.food-calories,
+.exercise-calories,
+.net-calories{
+    font-size: 20px;
+    text-align: center;
+}
+
+.operators-home{
+    font-size: 20px;
+}
+
+.progress-bar{
+    background: linear-gradient(90deg, rgba(123,237,141,1) 0%, rgba(35,158,28,1) 100%);
+}
+
+/* recent activity */
+
+.activity-info{
+    width: auto;
+    height: auto;
+    background-color:#F7F7F7;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.picture-exercise{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.recent-pictures{
+    width: 50px;
+    height: 50px;
+}
+
+.recent-activities{
+    font-size: 20px;
+    text-align: center;
+    color: #28A122;
+    padding-top: 10px;
+}
+
+.description-activity{
+    font-size: 16px;
+    /* overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width:210px; */
+}
+
+.share-your-day{
+    border-radius: 30px;
+    background: #7bed8d;
+    border-color: transparent;
+    color: whitesmoke;
+    padding: 5px 20px 5px 20px;
+    width: 70%;
+    margin-left: 15%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.articles-healthy-food{
+    padding-bottom: 15px;
+}
+
+.articles-healthy-food,
+.recent-recipe,
+.recent-exercise{
+    width: 100%;
+}
+
+/* buttons for calories / workouts or food */
+
+.add-workout {
+    bottom: 40px;
+    width: 35%;
+    min-width: 260px;
+    height: 100px;
+    border-radius: 12px;
+    background: rgb(123,237,141);
+    box-shadow: inset 0px 0px 30px  30px rgba(0, 0, 0, 0.08);
+    z-index: 0;
+    margin: 0 2% 0 21.5% ;
+    cursor: pointer;
+}
+
+.add-food{
+    bottom: 40px;
+    width: 35%;
+    min-width: 260px;
+    height: 100px;
+    margin: 0 21.5% 0 0;
+    border-radius: 12px;
+    background: rgb(123,237,141);
+    box-shadow: inset 0px 0px 30px  30px rgba(0, 0, 0, 0.08);
+    z-index: 0;
+    cursor: pointer;
+}
+
+.image-add-workout{
+width: 150px;
+height: 100px;
+z-index: 3;
+}
+
+.text-add-workout{
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+    font-family:acumin-pro, sans-serif;
+    font-weight: 700;
+}
+
+/* short info about different days */
+
+.info-days{
+    background-color: #F0F4F8;
+    border-radius: 20px;
+    margin-top: 30px !important;
+    width: 100%;
+    height: 150px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.days-bar{
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 7px;
+}
+
+.day-info-home{
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    font-family: acumin-pro, sans-serif;
+    cursor: pointer;
+}
+
+.switch-days{
+    font-size: 35px;
+    color: rgb(41,163,36);
+    cursor: pointer;
+}
+
+.value-protein{
+    text-align: center;
+    color: rgb(41,163,36);
+    font-family: acumin-pro, sans-serif;
+}
+
+.value-carbs{
+    text-align: center;
+    color: orange;
+    font-family: acumin-pro, sans-serif;
+}
+
+.value-fats{
+    text-align: center;
+    color: red;
+    font-family: acumin-pro, sans-serif;
+}
+
+.nutritional-percent{
+    width: 80%;
+    margin-left: 10%;
+}
+
+/* SETTINGS */
+.settings{
+    display: none;
+    width: 100%;
+    height: 88%;
+    border-radius: 20px 20px 36px 36px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.05);
+    z-index:0;
+    overflow-y: scroll;
+}
+.title-section-settings{
+    width: 100%;
+    height: 100px;
+    border-radius: 20px 20px 36px 36px;
+    background: #fff;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.05);
+}
+
+.title-settings{
+    text-align: center;
+    font-family: acumin-pro, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #748a9d;
+    padding-top: 47px;
+}
+
+.your-info{
+    font-family: acumin-pro, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #748a9d;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.table-settings{
+    border-radius: 8px;
+    background: #f0f4f8;
+    width: 70% !important;
+    margin-left:15%;
+    height: auto;        
+}
+
+.text-setting-info{
+    font-family: acumin-pro, sans-serif;
+    margin: 0 0 0 10%;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #748a9d;
+}
+
+.section-line-settings{
+    padding: 20px 0;
+}
+
+.edit-button{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.change-settings{
+    width:100%;
+    padding: 5px 10px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+}
+
+/* modal  */
+
+.modal-window {
+    display: none; 
+    position: fixed; 
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    overflow: hidden;
+    border-radius: 20px;
+    padding-top: 0.5% !important;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .modal-window-food{
+    display: none; 
+    position: fixed; 
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    overflow: hidden;
+    border-radius: 20px;
+    padding-top: 0.5% !important;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+
+  .modal-cont {
+      height: auto;
+    background-color: #fff;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+  }
+
+  .quit-button i{
+      color: green;
+      font-size: 25px;
+      cursor: pointer;
+  }
+
+  .title-search{
+        font-family: acumin-pro, sans-serif;
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: #748a9d;
+        padding-top: 0px;
+  }
+
+  .search-bar{
+        width: 100%;
+        padding: 18px 50px;
+        margin-bottom: 15px;
+        border-radius: 12px 12px 36px 36px;
+        box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+        background: #fff url(src/img/icon-search.png) no-repeat scroll 4% 50%;
+        border-color: transparent;
+    }
+
+    .search-bar-food{
+        width: 100%;
+        padding: 18px 50px;
+        margin-bottom: 15px;
+        border-radius: 12px 12px 36px 36px;
+        box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+        background: #fff url(src/img/icon-search.png) no-repeat scroll 4% 50%;
+        border-color: transparent;
+    }
+
+.box__exercises{
+    width: 100%;
+    height: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+}
+
+.box__meals{
+    width: 100%;
+    height: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+}
+
+
+.exercise-box{
+    width: 80% !important;
+    border: 1px solid transparent;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+.meal-box{
+    width: 80% !important;
+    border: 1px solid transparent;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+.image-workout__list{
+    color:  rgba(123,237,141,1);
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.image-meal__list{
+    color:  rgba(123,237,141,1);
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+.name-ex-style{
+    font-family: acumin-pro, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #748a9d;
+    margin: 0 0 0 10px;
+    padding: 2px;
+}
+
+.name-exercise{
+    display: inline-block;
+    overflow: hidden ;
+    white-space: nowrap ;
+    text-overflow: ellipsis ;
+    max-width: 250px ;
+}
+
+
+.name-meal{
+    display: inline-block;
+    overflow: hidden ;
+    white-space: nowrap ;
+    text-overflow: ellipsis ;
+    max-width: 250px ;
+}
+
+.nutri-info {
+    font-family: acumin-pro, sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: #748a9d;
+}
+
+.delete-individual-workout{
+    padding: 0 !important;
+    height: auto;
+    background: #a6bcd0;
+    opacity: 0.6;
+    border-radius: 0 10px 10px 0 ;
+}
+
+.delete-individual-meal{
+    padding: 0 !important;
+    height: 40px;
+    background: #a6bcd0;
+    opacity: 0.6;
+    border-radius: 0 10px 10px 0 ; 
+}
+
+.quantity-meal{
+    color:#7bed8d;
+}
+
+.number-exercise {
+    color:#7bed8d;
+}
+
+.workout-kcal-field{
+    width: 100%;
+    height: 50px;
+    max-width:200px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+}
+
+.selected-exercise,
+.selected-ingredient,
+.unselected-ingredient{
+    word-break:break-all;
+    font-family: acumin-pro, sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #7BED8D;
+    padding-top: 0px;
+}
+
+.workout-number {
+    width: 90px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.1);
+}
+
+.quanity-food{
+    max-width:200px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.1);
+    border-color: turquoise;
+}
+
+.sets-work{
+    float: right;  
+    border-color: teal;
+}
+
+.reps-work{
+    float: left;
+    border-color: teal;
+}
+
+.time-work{
+float: right;
+}
+
+.intensity-work{
+float: left;
+}
+
+.save-workout{
+    width: 40% !important;
+    margin-left: 30%;
+    border-radius: 30px;
+    background: #7bed8d;
+    color: white;
+    border-color: transparent;
+    padding: 10px 10px;
+    font-size: 17px;
+}
+
+.save-meal{
+    width: 40% !important;
+    margin-left: 30%;
+    border-radius: 30px;
+    background: #7bed8d;
+    color: white;
+    border-color: transparent;
+    padding: 10px 10px;
+    font-size: 17px;
+}
+
+input, input:focus, input:hover, input:active {
+    outline: none;
+}
+
+/* wokrout list */
+.modal-container{
+    display: none; 
+    position: absolute; 
+    z-index: 2001;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: rgba(23, 24, 10, 0.4); 
+}
+.modal-container-food{
+    display: none; 
+    position: absolute; 
+    z-index: 2001;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: rgba(23, 24, 10, 0.4); 
+}
+
+.list-exercises{
+    background-color: #fff;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 98%;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+}
+
+.list-ex-api,
+.list-ing-api{
+    height:350px;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+}
+
+.buttons-exercise-api{
+    max-width: 150px;
+}
+
+.btn-ex-api-1,
+.btn-ex-api-2{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.btn-ex-api-1{
+    text-align: end;
+    color: rgb(43,165,38);
+}
+
+.btn-ex-api-2{
+    text-align: start;
+    color: cornflowerblue;
+}
+
+.exercise-box-api,
+.ingredient-box-api{
+    width: 80% !important;
+    border: 1px solid transparent;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+/* calendar */
+.display-calendar{
+    width: 100%;
+    height: 88%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 20px 20px;
+}
+
+.info-days-calendar{
+    background-color: #F0F4F8;
+    border-radius: 20px;
+    margin-top: 15px !important;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.days-bar-calendar{
+width: 100%;
+}
+
+.title-calendar{
+    text-align: center;
+    padding-top: 20px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    color: #748a9d;
+}
+
+.table-data-macaro{
+    padding-top: 20px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    color: #23272a;
+    width: 70% !important;
+    margin-top: 70px ;
+    margin-left: 15%;
+    box-shadow: 0px 20px 35px rgba(66, 48, 48, 0.2);
+}
+.table-data-macaro tr, .table-data-macaro th, .table-data-macaro td{
+    border: 1px solid rgba(128, 128, 128, 0.302);
+}
+.table-data-macaro td{
+padding: 10px;
+}
+
+.table-data-macaro tr:hover {
+    background-color: #ddd;
+}
+
+.table-data-macaro th {
+    padding: 10px 10px;
+    text-align: left;
+    background-color: rgb(41,163,36);
+    color: white;
+  }
+
+  .work-perf {
+    margin-top: 30px;
+    font-family: acumin-pro, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #748a9d;
+  }
+
+  .img-performance-workout{
+      width: 216px !important;
+  }
+
+  /* calculator */
+   
+
+
+.calculator1{
+    overflow-y:  scroll;
+    overflow-x: hidden;
+    display: none;
+    height: 84%;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 10%;
+    border-radius: 80px;
+    background-color: white;
+    /* background: linear-gradient(#f2f6ff 0%, #f2f6ff 74.3%, #fff 100%); */
+    box-shadow: 50px 50px 50px rgba(171, 182, 204);
+}
+
+/* .calculator-form{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+} */
+
+.form-calculator{
+    width: 80% !important;
+    margin-left: 13% !important;
+    /* margin-right: 10%; */
+}
+
+.calculator1 h2 {
+    padding-top: 3vh;
+}
+
+#age{
+ margin-left: 3%;
+ width: 94%;
+}
+
+.gender{
+    height: 6vh;
+}
+.calculator1 input{
+    background-color: #E8F0FE;
+    border: none;
+    height: 6vh;
+    min-height: 50px;
+    padding: 12px 0px 12px 12px;
+}
+.calculator1 select {
+    width: 100%;
+    height: 6vh;
+    background-color: #E8F0FE;
+    border: none;
+    min-height: 50px;
+    padding: 12px 0px 12px 12px;
+
+}
+.btn-submit{
+    width: 30% !important;
+    margin-left: 35%;
+    margin-top: 20px !important;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    background-color:  #7bed8d!important;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 27px;
+    transition: 0.5s;
+    padding: 10px !important;
+}
+
+.btn-submit:hover{
+    color: #7bed8d;
+    background-color: white !important;
+}
+
+.desc-calorie-calculator{
+    font-family: acumin-pro, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: #748a9d;
+}
+
+b{
+    font-family: acumin-pro, sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: #748a9d;
+}
+
+/* description of every workout */
+.info-exercise-api{
+    display: none;
+    margin-top: 10px !important;
+    width: 90% !important;
+    margin-left: 5% !important;
+    border-radius: 20px;
+    padding: 10px 0px;
+    border: 1px solid #49a9185a;
+    transition: display 2s;
+}
+
+.req-equipment, .list-muscles {
+    font-family: acumin-pro, sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: #748a9d;
+}
+
+.desc-exercise-api p, .desc-exercise-api li{
+    font-family: acumin-pro, sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    color: #748a9d;
+}
+
+
+
+/* spinner */
+
+.spinner{
+    padding-top: 3% !important;
+    text-align:center;
+}
+
+.error{
+    padding-top: 3% !important;
+    text-align:center;
+}
+
+.spinner svg {
+        animation: 2s linear infinite svg-animation;
+        max-width: 100px;
+      }
+      
+      @keyframes svg-animation {
+        0% {
+          transform: rotateZ(0deg);
+        }
+        100% {
+          transform: rotateZ(360deg)
+        }
+      }
+      
+      circle {
+        animation: 1.4s ease-in-out infinite both circle-animation;
+        display: block;
+        fill: transparent;
+        stroke: rgb(123,237,141);;
+        stroke-linecap: round;
+        stroke-dasharray: 283;
+        stroke-dashoffset: 280;
+        stroke-width: 10px;
+        transform-origin: 50% 50%;
+      }
+      
+      @keyframes circle-animation {
+        0%,
+        25% {
+          stroke-dashoffset: 280;
+          transform: rotate(0);
+        }
+        
+        50%,
+        75% {
+          stroke-dashoffset: 75;
+          transform: rotate(45deg);
+        }
+        
+        100% {
+          stroke-dashoffset: 280;
+          transform: rotate(360deg);
+        }
+      }
+
+
+      /* error message */
+
+      .error-icon{
+          font-size: 30px;
+          color: red;
+      }
+
+      /* pagination buttons */
+
+      .btn--pagination{
+        margin: 20px 0px;
+        padding: 5px 20px;
+        font-family: acumin-pro, sans-serif;
+        font-size: 25px;
+        letter-spacing: -0.01em;
+        color: #748a9d;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        background-color:  #fff;
+        box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+      }
+.pagination-exercise{
+    width: 100%;
+}
+    .pagination-exercise__btn--prev{
+        float: left;
+    }
+
+    .pagination-exercise__btn--next{
+        float: left;
+    }
+
+    .nr-page{
+        font-size: 18px;
+    }
+
+    .btn--pagination i {
+        font-size: 18px;
+    }
+
+
+/* responsive */
+
+@media only screen and (max-width : 1200px){
+     .cropped{
+         transform: scale(0.8);
+     }
+
+     .total-calories{
+        font-size: 30px;
+        margin-left: 20px
+    }
+    .desc-cal-operation{
+        font-size: 12px;
+    }
+    .info-days{
+        transform: scale(0.8);
+        margin-top: 0px !important;
+        margin-bottom: 10px;
+    }
+    .activity-info{
+     padding-top: -80px !important;
+     transform: scale(0.8);
+    }
+    .info-table-last{
+        margin-top: -30px !important;
+    }
+    .add-exercise-food{
+        transform: scale(0.9);
+        margin-top: -10px !important;
+     }
+
+     .modal-window{
+        padding-top: 0.5% !important;
+        height: 100%;
+    }
+
+    .modal-window-food{
+        padding-top: 0.5% !important;
+        height: 100%;
+    }
+
+    .modal-cont {
+        width: 80%;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+   }
+
+   .name-meal{
+    max-width: 300px ;
+}
+
+
+   .description-activity{
+    font-size: 20px;
+    /* overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width:700px; */
+}
+
+
+
+}
+
+@media only screen and (max-width : 1024px){
+    .form-create_account {
+        margin-top: 10px;
+    }
+     .submit-account {
+        margin-top: 5px;
+        height: 50px;
+
+    }
+
+  
+    .add-exercise-food{
+        margin-bottom: 10px;
+     }
+     .modal-cont {
+         width: 80%;
+         margin: 0;
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+    }
+
+
+.name-meal{
+    max-width: 250px ;
+}
+
+    .buttons-ingredient-api,
+    .buttons-exercise-api{
+        width: 80px;
+    }
+
+    .description-activity{
+        font-size: 20px;
+        /* max-width:700px; */
+    }
+}
+
+@media only screen and (max-width : 992px){
+    .calculator1{
+overflow-y: scroll;
+overflow-x: hidden;
+    }
+
+    .calculator1 h2 {
+        padding-top: 2vh;
+    }
+    
+    .gender{
+        height: 4vh;
+    }
+    .calculator1 input{
+        height: 4vh;
+    }
+    .calculator1 select {
+        height: 4vh;
+        padding: 0px;
+    
+    }
+    .btn-submit{
+   height: auto !important;
+    }
+    
+    .btn-submit:hover{
+        color: #7bed8d;
+        background-color: white !important;
+    }
+    
+    .desc-calorie-calculator{
+        font-family: acumin-pro, sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: -0.01em;
+        color: #748a9d;
+    }
+    
+    b{
+        font-family: acumin-pro, sans-serif;
+        font-size: 16px;
+        letter-spacing: -0.01em;
+        color: #748a9d;
+    }
+
+    .name-ex-style{
+        font-size: 18px;
+    }
+    
+    .name-exercise{
+        max-width: 200px ;
+    }
+
+    .name-meal{
+        max-width: 210px;
+    }
+    .btn--pagination{
+        padding: 10px 8px;
+        font-size: 20px;
+      }
+}
+
+@media only screen and (max-width : 768px){
+    html,body {
+        height: auto;
+        padding: 0 !important;
+    }
+
+    .main{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    }
+    .register-fields{
+    height: 45px;
+    }
+
+    .create-account{
+        font-size: 20px;
+    }
+
+    .submit-account {
+        margin-top: 10px;
+        height: 40px;
+    }
+
+    .calculator1{
+        height: 85%;
+        width: 100%;
+        margin-left: 0%;
+        border-radius: 0px;
+    }
+    .btn-submit{
+        font-size: 12px;
+    }
+
+    .modal-cont {
+        width: 90%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+   }
+
+   .list-exercises{
+    width: 90%;
+}
+
+.nutri-info {
+    font-size: 14px;
+}
+
+.modal-window-food,
+.modal-window{
+    border-radius: 0px;
+  }
+
+  .exercise-box,
+.ingredient-box{
+    width: 90% !important;
+margin-left: 5%;
+}
+
+.name-ex-style{
+    font-size: 18px !important;
+}
+
+.name-exercise{
+    display: inline-block;
+    overflow: hidden ;
+    white-space: nowrap ;
+    text-overflow: ellipsis ;
+    max-width: 170px ;
+}
+
+
+
+.name-meal{
+    max-width: 130px;
+}
+
+.buttons-ingredient-api,
+.buttons-exercise-api{
+    width:55px;
+}
+
+.exercise-box-api,
+.ingredient-box-api{
+    width: 90% !important;
+margin-left: 5%;
+}
+
+
+.description-activity{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.selected-exercise,
+.selected-ingredient,
+.unselected-ingredient{
+    font-size: 22px;
+}
+
+.search-bar{
+    font-size: 16px;
+}
+
+.title-search{
+    font-size: 20px;
+}
+
+.quanity-food,
+.workout-number{
+    font-size: 18px;
+}
+
+.workout-kcal-field{
+    font-size: 20px;
+}
+
+.save-meal,
+.save-workout{
+    padding: 5px 5px;
+    font-size: 15px;
+}
+
+
+
+.btn--pagination{
+    padding: 10px 0px;
+    font-size: 15px;
+  }
+
+.table-settings{
+    border-radius: 8px;
+    background: #f0f4f8;
+    width: 90% !important;
+    margin-left:5%;
+    height: 100%;        
+}
+
+.edit-button{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+}
+
+@media only screen and (max-width : 480px){
+    .create-account{
+        font-size: 18px;
+    }
+    .register-fields{
+        height: 45px;
+        font-size: 12px;
+        }
+    .submit-account {
+        margin-top: 20px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .nav-icons{
+        font-size: 20px;
+    }
+    .nav-icon-logo{
+        width: 45px;
+        height: 45px;
+    }
+
+    .cropped{
+        transform: scale(0.8);
+        display: none;
+    }
+
+    .add-exercise-food{
+        transform: scale(0.6);
+        margin-top: -10px !important;
+     }
+    
+    .info-days{
+        margin-top: 0px !important;
+        margin-bottom: 10px;
+    }
+
+    .day-info-home{
+        font-size: 15px;
+    }
+
+    .nutritional-percent h5{
+        font-size: 17px;
+    }
+
+    .calories-remaining-change{
+        font-size: 14px;
+    }
+
+    .list-exercises{
+        width: 100%;
+    }
+
+    .recent-pictures,
+    .picture-exercise{
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .description-activity{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+    
+
+  .selected-exercise,
+.selected-ingredient,
+.unselected-ingredient{
+font-size: 17px;
+}
+
+.modal-cont {
+width: 90%;
+}
+
+.name-ex-style{
+font-size: 13px !important;
+}
+
+.name-meal{
+    max-width: 85px;
+}
+
+.exercise-box{
+    width: 96% !important;
+    margin-left: 1%;
+}
+
+.meal-box{
+    width: 90% !important;
+    margin-left: 5%;
+}
+
+.buttons-ingredient-api,
+.buttons-exercise-api{
+    width: 90%;
+    padding-right: 25% ;   
+}
+
+.btn-ex-api-1,
+.btn-ex-api-2{
+    font-size: 18px;
+    cursor: pointer;
+}
+.btn--pagination{
+    margin: 20px 0px;
+    padding: 6px 2px;
+    font-size: 7px;
+  }
+  
+  .text-setting-info{
+    font-size: 10px;
+}
+
+.search-bar,
+.search-bar-food{
+    font-size: 12px;
+    padding: 5px 30px;
+}
+
+.edit-button{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.title-section-settings{
+    width: 100%;
+    height: 50px;
+}
+
+.title-settings{
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.your-info{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.switch-days{
+    font-size: 25px;
+}
+
+.list-ing-api{
+    height:330px;
+}
+
+.food-calories,
+.exercise-calories,
+.net-calories{
+font-size: 20px;
+}
+
+.btn--pagination{
+    padding: 0px 0px;
+    font-size: 13px;
+  }
+
+  .nr-page{
+    font-size: 10px;
+}
+
+.btn--pagination i {
+    font-size: 10px;
+}
+
+.btn-ex-api-1,
+.btn-ex-api-2{
+    font-size: 20px;
+}
+
+}
